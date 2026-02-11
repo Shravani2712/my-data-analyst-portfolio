@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shravani Dhuri | Data Analyst Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Data Analyst, SQL, Python, Power BI, Tableau, Streamlit, Dashboard, EDA">
+<meta name="description" content="Data Analyst Portfolio of Shravani Dhuri">
+
+<style>
+
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #f4f6f9, #eef2ff);
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #111827, #1e3a8a);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero h2 {
+  color: #93c5fd;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.hero p {
+  max-width: 850px;
+  margin: 15px auto;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.btn-outline:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section h2 {
+  margin-bottom: 25px;
+  color: #111827;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #2563eb;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 5px;
+}
+
+/* ===== SKILLS ===== */
+.skills span {
+  display: inline-block;
+  background: #e0e7ff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #2563eb;
+  font-weight: bold;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CERTIFICATIONS ===== */
+.certs {
+  list-style: none;
+}
+
+.certs li {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.certs li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(37,99,235,0.25);
+}
+
+.certs img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.certs a {
+  display: inline-block;
+  margin-top: 6px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.certs a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  background: linear-gradient(135deg, #111827, #1e3a8a);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+  color: #9ca3af;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 34px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>Shravani Sachin Dhuri</h1>
+  <h2>Data Analyst | SQL | Python | Power BI | Tableau | Streamlit</h2>
+  <p>
+    Results-driven Data Analyst with hands-on experience in data cleaning,
+    exploratory data analysis (EDA), KPI tracking, and interactive dashboard development.
+    Passionate about transforming raw data into actionable business insights.
+  </p>
+  <div class="buttons">
+    <a class="btn" href="Shravani_Sachin_Dhuri_Resume.pdf" download>Download Resume</a>
+    <a class="btn-outline" href="https://github.com/Shravani2712" target="_blank">GitHub</a>
+    <a class="btn-outline" href="https://linkedin.com/in/shravani-dhuri27" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Excel</span>
+    <span>Power BI</span>
+    <span>Tableau</span>
+    <span>Streamlit</span>
+    <span>Pandas</span>
+    <span>EDA</span>
+    <span>KPI Analysis</span>
+    <span>Data Visualization</span>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>🍴 Zomato Data Analytics Dashboard</h3>
+    <p>
+      Conducted end-to-end data analysis on large-scale food delivery datasets using SQL and Python.
+      Performed data cleaning, exploratory data analysis, and KPI tracking to analyze customer behavior,
+      order trends, delivery performance, and revenue metrics.
+      Built interactive Streamlit dashboards to support data-driven decision-making.
+    </p>
+    <p><strong>Tools:</strong> SQL, Python, Pandas, Streamlit, Power BI</p>
+    <a href="https://zomato-data-analysis-project-hflokcrpmem4lden2pkonq.streamlit.app/" target="_blank">Live Dashboard</a>
+    <a href="https://github.com/Shravani2712/zomato-data-analysis-project" target="_blank">GitHub</a>
+  </div>
+  <div class="card">
+    <h3>🏦 DBS Bank Data Analysis</h3>
+    <p>Built interactive Power BI, Tableau, Excel, & Streamlit live dashboards to visualize KPIs such as loan performance, customer segmentation, and monthly revenue trends.</p>
+    <p><strong>Tools:</strong> SQL, Python, Pandas, Streamlit, Power BI</p>
+    <a href="https://dbs-bank-data-analysis-cs6t2jbh4ponlb5afk3skw.streamlit.app/" target="_blank">Live Dashboard</a>
+    <a href="https://github.com/Shravani2712/dbs-bank-data-analysis" target="_blank">GitHub</a>
+  </div>
+  <div class="card">
+    <h3>🛍️ Customer Shopping Behavior Analysis</h3>
+    <p>
+      Analyzed transactional customer data to identify purchasing patterns, spending behavior,
+      and customer segmentation.
+      Developed interactive visual dashboards using Streamlit to present insights
+      for marketing strategy and business optimization.
+    </p>
+    <p><strong>Tools:</strong> Python, EDA, Streamlit</p>
+    <a href="https://customer-shopping-behavior-analysis-dashboard-gglcha9rsmqtxxik.streamlit.app/" target="_blank">Live Dashboard</a>
+    <a href="https://github.com/Shravani2712/customer-shopping-behavior-analysis-dashboard" target="_blank">GitHub</a>
+  </div>
+
+  <div class="card">
+    <h3> 🦠 COVID-19 vs Nipah Virus Analysis Dashboard</h3>
+    <p>
+      Designed a comparative analytics dashboard to study outbreak trends,
+      spread patterns, and impact analysis of COVID-19 and Nipah virus.
+      Visualized epidemiological data using Streamlit to communicate insights clearly.
+    </p>
+    <p><strong>Tools:</strong> Python, Streamlit, Data Visualization</p>
+    <a href="https://covid-nipah-dashboard-hu2tum4cahchxbjvdzyqke.streamlit.app/" target="_blank">Live Dashboard</a>
+    <a href="https://github.com/Shravani2712/covid-nipah-dashboard" target="_blank"> GitHub</a>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="section">
+  <h2>Certifications</h2>
+
+  <ul class="certs">
+    <li>
+      <img src="excelr logo.png" width="70">
+      <strong>Google Analytics Certification</strong> – Google Digital Academy<br>
+      <a href="Data Analytics Certificate by ExcelR.png" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <img src="nasscom logo.png" width="90">
+      <strong>Certificate Program in Data Analytics</strong> – NASSCOM<br>
+      <a href="My Nasscom Certificate.png" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <img src="google logo.png" width="70">
+      <strong>Google Analytics Certification</strong> – Google Digital Academy<br>
+      <a href="Google Analytics Certificate by Google Digital Academy.png" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <img src="ibm skillsbuild logo.png" width="55">
+      <strong>Data Fundamentals</strong> – IBM SkillsBuild<br>
+      <a href="Data Fundamentals by IBM Skillsbuild.png" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <img src="simplilearn logo.png" width="90">
+      <strong>Introduction to Data Analytics</strong> – Simplilearn<br>
+      <a href="Introduction to Data Analytics by Simplilearn.png" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <img src="simplilearn logo.png" width="90">
+      <strong>Python for Data Analysis</strong> – Simplilearn<br>
+      <a href="Python for Data Analysis by Simplilearn.png" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <img src="freeCodeCamp logo.png" width="90">
+      <strong>Data Analysis with Python</strong> – freeCodeCamp<br>
+      <a href="Data Analysis with Python by freeCodeCamp.png" target="_blank">View Certificate</a>
+    </li>
+    <li>
+      <img src="Cisco logo.png" width="90">
+      <strong>Data Analytics Essentials</strong> – Cisco<br>
+      <a href="Data Analytics Essentials by Cisco.png" target="_blank">View Certificate</a>
+    </li>
+  </ul>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:shravanidhuri16@gmail.com">shravanidhuri16@gmail.com</a></p>
+  <p>Phone: +91 9322410756</p>
+  <p>Location: Badlapur, Thane, Maharashtra, India</p>
+</section>
+
+<footer>
+  © 2026 Shravani Dhuri | Data Analyst Portfolio
+</footer>
+<script>
+const sections = document.querySelectorAll(".section");
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    if(sec.getBoundingClientRect().top < window.innerHeight - 100){
+      sec.classList.add("visible");
+    }
+  });
+});
+</script>
+</body>
+</html>
